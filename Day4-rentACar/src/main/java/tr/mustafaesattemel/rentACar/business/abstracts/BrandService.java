@@ -2,10 +2,12 @@ package tr.mustafaesattemel.rentACar.business.abstracts;
 
 import java.util.List;
 
-import tr.mustafaesattemel.rentACar.entities.concretes.Brand;
+import tr.mustafaesattemel.rentACar.business.requests.CreateBrandRequest;
+import tr.mustafaesattemel.rentACar.business.responses.GetAllBrandsResponse;
 
 public interface BrandService {
 	
-	List<Brand> getAll();
+	List<GetAllBrandsResponse> getAll();
+	void add(CreateBrandRequest createBrandRequest);
 
 }
